@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1> 
+    <!-- DOM (Document Object Model): conjunto de objetos dentro do seu navegador que vai dar acesso aos componentes internos do seu website-->
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.querySelector('div#msg')
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+
+        //window.document.charsert → mostra o set de caracteres.
+
+        //window.document.appName → mostra o navegador atual do site.
+
+        //window.document.URL → mostra a URL do site.
+
+
+        //getElementsByTagName → obtenha o elemento com a TAG especificada.
+
+        //getElementById → obtém o elemento com o ID especificado.
+
+        //getElementsByName → obtém o elemento com o NAME especificado.
+
+        //getElementByClassName → obtém o elemento com a CLASS especificada.
+
+        //querySelector('div#msg') → usa-se "#"" quando se quer selecionar o "id".
+
+        //querySelector('div.msg') → usase o "." quando se quer selecionar a "class".
+
+
+        //.innerText → insere o texto na página web sem formatação.
+
+        //.innerHTML → insere o texto na página web de maneira formatada.
+    </script>
+</body>
+</html>
